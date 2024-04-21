@@ -1,0 +1,32 @@
+OpenAI response for Prompt: using artificial intelligence write a program for writing prime numbers in Python 
+ ************************ 
+ 
+
+
+#This code is written in Python 3
+
+#defining a function that takes user input n
+def primenum(n):
+  
+ #setting a variable to take true to enter the loop
+  flag  = True
+ 
+ #loop that loops from 2 to n - 1 as any number is divisible by itself and 1 
+  for i in range(2, n):
+
+ #checking if the entered number is divisible by other numbers 
+    if n  % i  == 0:
+        flag = False
+        break
+
+#returning flag
+  return flag
+
+#Taking a number from the user
+ num = int(input("Enter any number:"))
+
+#function call
+ if primenum(num):
+   print (num,"is a prime number")
+ else:
+   print (num,"is not a prime number")

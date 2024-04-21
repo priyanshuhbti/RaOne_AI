@@ -1,0 +1,13 @@
+OpenAI response for Prompt: using artificial intelligence write the program for natural numbers 
+ ************************ 
+ 
+
+
+import random
+
+sum = 0
+
+for number in range(1, 101):
+    sum = sum + number 
+
+print("The sum of natural numbers up to 100 is", sum)
